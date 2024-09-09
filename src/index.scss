@@ -1,0 +1,84 @@
+$breakpoint-xs: 20rem; // 320px
+$breakpoint-sm: 30rem; // 480px
+$breakpoint-md: 48rem; // 768px
+$breakpoint-lg: 64rem; // 1024px
+$breakpoint-xl: 75rem; // 1200px
+$breakpoint-xxl: 120rem; // 1920px 
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+ 
+    @media (max-width: $breakpoint-lg) {
+        font-size: 54%;
+    } 
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    @media (max-width: $breakpoint-md){
+        font-size: 1.4rem;
+    }
+    @media (max-width: $breakpoint-sm){
+        font-size: 1.2rem;
+    }
+    @media (max-width: $breakpoint-xs){
+        font-size: 1rem;
+    } 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
